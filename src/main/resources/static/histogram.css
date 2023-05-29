@@ -1,0 +1,108 @@
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+    background-color: white;
+    left: 10px;
+    height: 50px;
+}
+h3 {
+ color: #d90707;
+}
+#webpage{
+    font-family: 'Times New Roman', Times, serif;
+}
+.sec1{
+    padding: 10px;
+    background-color: #E9EFF1;
+    width: 48%;
+    position: relative;
+    left: 10px;
+}
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
+.sec2{
+    padding: 10px;
+    background-color: #E9EFF1;
+    top: -881px;
+    left: 950px;
+    width: 48%;
+    position: relative;
+
+}
+.sec3{
+    padding: 10px;
+    background-color: #E9EFF1;
+    padding: 20px;
+    top: -865px;
+    left: 950px;
+    height: 185px;
+    width: 48%;
+    position: relative;
+}
+.table1{
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+td{
+    width: 200px;
+    padding: 10px;
+}
+.box1{
+    width: 10px;
+    background-color: white;
+    border: black;
+}
+input[type=number]{
+    font-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100px;
+    height: 30px;
+}
+.table2{
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+input[type=grade]{
+    height: 30px;
+    width: 300px;
+}
+button[id=button1]{
+    border-radius: 8px;
+    background-color: #d90707;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 100px;
+}
+#graph{
+    font-family: monospace;
+}
+.table2 td {
+    padding: 10px;
+  }
+  
+  .table2 #output1,
+  .table2 #output2,
+  .table2 #output3,
+  .table2 #output4,
+  .table2 #output5,
+  .table2 #output6,
+  .table2 #output7,
+  .table2 #output8,
+  .table2 #output9,
+  .table2 #output10,
+  .table2 #output11 {
+    background-color: #d90707;
+    width: 0px;
+    height: 20px;
+  }
+  input[id=userInput]{
+    border-radius: 8px;
+    height: 25px;
+  }

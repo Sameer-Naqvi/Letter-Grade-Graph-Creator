@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram Generator</title>
+    <link rel="stylesheet" href="histogram.css">
+    <script src="calculate.js" defer></script>
+</head>
+<body>
+    <main id="webpage">
+    <div class="title"><h2>Histogram Generator</h2></div>
+    <div class="sec1">
+        <div id="error-message" class="error-message"></div>
+        <h3><b>Lower bounds</b></h3>
+        <table class="table1">
+            <tr>
+                <td><b>Max</b></td>
+                <td>
+                    <form>
+                    <input id="boundMAX" type="number">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><b>A+</b></td>
+                <td>
+                    <form>
+                    <input id="boundA+" type="number">   
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><b>A</b></td>
+                <td>
+                    <form>
+                    <input id="boundA" type="number">
+                    </form>
+                </td> 
+            </tr>
+            <tr>
+                <td><b>A-</b></td>
+                <td>
+                    <form>
+                    <input id="boundA-" type="number">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><b>B+</b></td>
+                <td>
+                    <form>
+                    <input id="boundB+" type="number">
+                    </form>
+                </td>
+                </tr>
+            <tr>
+                <td><b>B</b></td>
+                <td>
+                    <form>
+                    <input id="boundB" type="number">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><b>B-</b></td>
+                <td>
+                    <form>
+                    <input id="boundB-" type="number">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><b>C+</b></td>
+                <td>
+                    <form>
+                    <input id="boundC+" type="number">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><b>C</b></td>
+                <td>
+                <form>
+                <input id="boundC" type="number">
+                </form>
+                </td>
+            </tr>
+            <tr>
+                <td><b>C-</b></td>
+                <td>
+                    <form>
+                    <input id="boundC-" type="number">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><b>D</b></td><td>
+                    <form>
+                    <input id="boundD" type="number">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><b>F</b></td><td>
+                    <form>
+                    <input id="boundF" type="number">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="sec2">
+        <h3><b>Histogram</b></h3>
+        <table class="table2">
+            <tr><td><b>A+</b></td><td><div id="output1" class="output"></div></td></tr>
+            <tr><td><b>A</b></td><td><div id="output2" class="output"></div></td></tr>
+            <tr><td><b>A-</b></td><td><div id="output3" class="output"></div></td></tr>
+            <tr><td><b>B+</b></td><td><div id="output4" class="output"></div></td></tr>
+            <tr><td><b>B</b></td><td><div id="output5" class="output"></div></td></tr>
+            <tr><td><b>B-</b></td><td><div id="output6" class="output"></div></td></tr>
+            <tr><td><b>C+</b></td><td><div id="output7" class="output"></div></td></tr>
+            <tr><td><b>C</b></td><td><div id="output8" class="output"></div></td></tr>
+            <tr><td><b>C-</b></td><td><div id="output9" class="output"></div></td></tr>
+            <tr><td><b>D</b></td><td><div id="output10" class="output"></div></td></tr>
+            <tr><td><b>F</b></td><td><div id="output11" class="output"></div></td></tr>
+          </table>
+    </div>
+    <div class="sec3">
+        <form id="newGrade">
+                <b>New Grade:</b> <input id="userInput" type="input">
+                <button type="submit" id="button1"><b>Add Grade</b></button>
+        </form>
+        <div id="error-message2" class="error-message"></div>
+    </div>
+</main>
+</body>
+</html>
