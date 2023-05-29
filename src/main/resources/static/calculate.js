@@ -1,5 +1,5 @@
 
-var grades = [];
+var grades = [66, 27, 11, 48, 50, 6, 1, 75, 98, 54, 55, 5, 43, 89, 92];
 var output1Arr = [];
 var output2Arr = [];
 var output3Arr = [];
