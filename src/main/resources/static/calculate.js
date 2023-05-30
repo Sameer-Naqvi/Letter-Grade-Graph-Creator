@@ -1,5 +1,7 @@
 
-var grades = [66, 27, 11, 48, 50, 6, 1, 75, 98, 54, 55, 5, 43, 89, 92];
+var grades = [66.43, 27.32, 11.21, 50.65, 6.86, 1.86, 75.54, 98.76,
+   54.32, 55.12, 89.21, 92.54, 51.76, 57.12, 59.21, 63.56, 62.64, 
+   71.16, 73.61, 72.23, 74.54, 81.43, 86.65, 87.23, 93.43, 91.32];
 var output1Arr = [];
 var output2Arr = [];
 var output3Arr = [];
@@ -43,7 +45,6 @@ function checkBoundsOrder() {
       return;
     }
   }
-
   document.getElementById("error-message").textContent = "";
 }
 var bound1 = document.getElementById("boundMAX");
@@ -172,6 +173,14 @@ function addToOutput(grade, upperBound, lowerBound, outputElementId) {
 }
 
 function checkRangeAndUpdateOutput(grade) {
+  var bounds2 = [bound_MAX, bound_A_plus, bound_A_minus, bound_B_plus, bound_B, bound_B_minus, bound_C_plus, bound_C, bound_C_minus, bound_D, bound_F];
+  for (var k = 0; k < bounds2.length - 1; k++) {
+    if (bounds2[k] === undefined) {
+      document.getElementById("error-message2").textContent = "Please ensure that all bounds are defined.";
+      return;
+    }
+  }
+  document.getElementById("error-message2").textContent = "";
   //using this method to put the max grade value into the highest range
   if(parseFloat(grade) === parseFloat(bound_MAX)){
     addToOutput((grade - parseFloat(1)), bound_MAX, bound_A_plus, 'output1');
